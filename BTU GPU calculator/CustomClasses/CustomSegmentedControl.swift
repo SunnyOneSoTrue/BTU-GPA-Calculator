@@ -1,0 +1,77 @@
+//
+//  CustomButton.swift
+//  BTU GPU calculator
+//
+//  Created by USER on 14.06.21.
+//
+
+import Foundation
+
+import UIKit
+
+@IBDesignable class CustomSegmentedControl: UISegmentedControl {
+    
+    // MARK: - Initialization
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setupView()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setupView()
+    }
+    
+    // MARK: - UI Setup
+    override func prepareForInterfaceBuilder() {
+        setupView()
+    }
+    
+    func setupView() {
+        self.backgroundColor = UIColor(red: 1.00, green: 0.00, blue: 0.49, alpha: 1.00)
+        self.layer.borderColor = borderColor
+        self.selectedSegmentTintColor  = tntColor
+        self.layer.cornerRadius = cornerRadius
+        self.layer.borderWidth = borderWidth
+        let titleTextAttributes = [NSAttributedString.Key.foregroundColor:UIColor(red: 1.00, green: 1.00, blue: 1.00, alpha: 1.00)]
+        UISegmentedControl.appearance().setTitleTextAttributes(titleTextAttributes, for: .selected)
+        
+    }
+    
+    // MARK: - Properties
+    
+    @IBInspectable
+    var backgroundClr: CGColor =  CGColor(red: 1.00, green: 0.00, blue: 0.49, alpha: 1.00) {
+        didSet {
+            self.layer.backgroundColor = backgroundClr
+        }
+    }
+    
+    @IBInspectable
+    var tntColor: UIColor = UIColor(red: 0.03, green: 0.00, blue: 0.68, alpha: 1.00) {
+        didSet {
+            self.tintColor = tntColor
+        }
+    }
+        
+    @IBInspectable
+    var cornerRadius: CGFloat = 10 {
+        didSet {
+            self.layer.cornerRadius = cornerRadius
+        }
+    }
+    
+    @IBInspectable
+    var borderWidth: CGFloat = 2 {
+        didSet {
+            self.layer.borderWidth = borderWidth
+        }
+    }
+    
+    @IBInspectable
+    var borderColor: CGColor =  CGColor(red: 1.00, green: 0.00, blue: 0.49, alpha: 1.00) {
+        didSet {
+            self.layer.borderColor = borderColor
+        }
+    }
+}

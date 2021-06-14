@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YTw-Pg-OKM">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--სემესტრული-->
+        <scene sceneID="L41-c8-Xla">
+            <objects>
+                <viewController storyboardIdentifier="SemesterGPAViewController" id="76c-vh-j1X" customClass="SemesterGPAViewController" customModule="BTU_GPU_calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zgx-Ea-RKq">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="სემესტრული GPA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zih-lW-Q2R">
+                                <rect key="frame" x="15" y="94" width="360" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="qXB-ig-bUU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="cYE-uG-oo1" customClass="CustomSegmentedControl" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                <rect key="frame" x="30" y="179" width="330" height="32"/>
+                                <segments>
+                                    <segment title="პირველი"/>
+                                    <segment title="მეორე"/>
+                                </segments>
+                                <connections>
+                                    <action selector="onSegmentChange:" destination="76c-vh-j1X" eventType="valueChanged" id="LDL-K0-uaZ"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CBs-kT-7Ba">
+                                <rect key="frame" x="0.0" y="215" width="390" height="496"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="SemesterTableViewCell" rowHeight="77" id="V9R-zj-w7M" customClass="SemesterTableViewCell" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="77"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="V9R-zj-w7M" id="808-LS-YXF">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="77"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="საგნის სახელი" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hnr-u1-ncK" customClass="CustomTextField" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                                    <rect key="frame" x="5" y="22" width="179" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="34" id="Cqd-ph-hxg"/>
+                                                        <constraint firstAttribute="width" constant="203" id="Pu4-u5-bxj"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="აღებული კრედიტი" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OiX-er-W2L" customClass="CustomTextField" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                                    <rect key="frame" x="256" y="22" width="114" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="82" id="9nu-wv-iAV"/>
+                                                        <constraint firstAttribute="width" constant="114" id="Ba5-IL-RGB"/>
+                                                        <constraint firstAttribute="height" constant="34" id="ew9-3h-cbQ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="GPA" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TlB-aL-k1t" customClass="CustomTextField" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                                    <rect key="frame" x="192" y="22" width="56" height="34"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="56" id="Gj6-4a-GiT"/>
+                                                        <constraint firstAttribute="height" constant="34" id="Izb-mD-7my"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="OiX-er-W2L" firstAttribute="trailing" secondItem="808-LS-YXF" secondAttribute="trailingMargin" id="2wd-6t-tQr"/>
+                                                <constraint firstItem="OiX-er-W2L" firstAttribute="trailing" secondItem="808-LS-YXF" secondAttribute="trailingMargin" id="Ed7-TV-Rf5"/>
+                                                <constraint firstItem="TlB-aL-k1t" firstAttribute="top" secondItem="808-LS-YXF" secondAttribute="topMargin" constant="11" id="H6i-Iv-g6j"/>
+                                                <constraint firstItem="TlB-aL-k1t" firstAttribute="leading" secondItem="hnr-u1-ncK" secondAttribute="trailing" constant="8" id="LbT-wH-iht"/>
+                                                <constraint firstItem="hnr-u1-ncK" firstAttribute="top" secondItem="808-LS-YXF" secondAttribute="top" constant="22" id="P9N-zn-UwJ"/>
+                                                <constraint firstItem="OiX-er-W2L" firstAttribute="top" secondItem="808-LS-YXF" secondAttribute="topMargin" constant="11" id="SCn-BS-S6t"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="OiX-er-W2L" secondAttribute="bottom" constant="10" id="Y0m-rg-9YD"/>
+                                                <constraint firstItem="OiX-er-W2L" firstAttribute="leading" secondItem="TlB-aL-k1t" secondAttribute="trailing" constant="8" id="kDu-r6-bzM"/>
+                                                <constraint firstItem="hnr-u1-ncK" firstAttribute="leading" secondItem="808-LS-YXF" secondAttribute="leading" constant="5" id="ue5-m0-fcZ"/>
+                                                <constraint firstAttribute="bottom" secondItem="hnr-u1-ncK" secondAttribute="bottom" constant="21" id="uwP-uF-RfE"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="TlB-aL-k1t" secondAttribute="bottom" constant="10" id="yWQ-BF-Llt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="subjectCreditField" destination="OiX-er-W2L" id="6To-MN-Gvi"/>
+                                            <outlet property="subjectGPAField" destination="TlB-aL-k1t" id="PR2-38-pwh"/>
+                                            <outlet property="subjectNameField" destination="hnr-u1-ncK" id="XeY-57-KGd"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwU-9v-DxF" customClass="CustomButton" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                <rect key="frame" x="15" y="719" width="360" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0FS-KO-xRd"/>
+                                </constraints>
+                                <state key="normal" title="დათვლა"/>
+                                <connections>
+                                    <action selector="onCalculate:" destination="F8S-dO-4lk" eventType="touchUpInside" id="hOb-yj-tkT"/>
+                                    <action selector="onCalculate:" destination="76c-vh-j1X" eventType="touchUpInside" id="mx8-HF-5My"/>
+                                </connections>
+                            </button>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c3R-xk-IhB">
+                                <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                                <items>
+                                    <navigationItem id="tZO-hV-HAG">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="4Dt-03-cPO">
+                                            <connections>
+                                                <action selector="onEdit:" destination="76c-vh-j1X" id="Lgz-sA-TeZ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5yD-R8-fRG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CBs-kT-7Ba" firstAttribute="leading" secondItem="5yD-R8-fRG" secondAttribute="leading" id="0eP-yu-JGn"/>
+                            <constraint firstItem="cYE-uG-oo1" firstAttribute="leading" secondItem="5yD-R8-fRG" secondAttribute="leading" constant="30" id="1bT-9e-bao"/>
+                            <constraint firstItem="c3R-xk-IhB" firstAttribute="leading" secondItem="5yD-R8-fRG" secondAttribute="leading" id="1d6-Qr-lN4"/>
+                            <constraint firstItem="c3R-xk-IhB" firstAttribute="top" secondItem="5yD-R8-fRG" secondAttribute="top" id="1wC-G1-415"/>
+                            <constraint firstItem="5yD-R8-fRG" firstAttribute="trailing" secondItem="cYE-uG-oo1" secondAttribute="trailing" constant="30" id="5wS-Uw-UIr"/>
+                            <constraint firstItem="c3R-xk-IhB" firstAttribute="trailing" secondItem="5yD-R8-fRG" secondAttribute="trailing" id="8a6-Qz-roY"/>
+                            <constraint firstItem="nwU-9v-DxF" firstAttribute="leading" secondItem="5yD-R8-fRG" secondAttribute="leading" constant="15" id="CL9-Kx-wDK"/>
+                            <constraint firstItem="cYE-uG-oo1" firstAttribute="top" secondItem="Zih-lW-Q2R" secondAttribute="bottom" constant="20" id="ILR-5w-8aP"/>
+                            <constraint firstItem="5yD-R8-fRG" firstAttribute="trailing" secondItem="Zih-lW-Q2R" secondAttribute="trailing" constant="15" id="LXi-Nf-tBl"/>
+                            <constraint firstItem="5yD-R8-fRG" firstAttribute="trailing" secondItem="CBs-kT-7Ba" secondAttribute="trailing" id="TkU-ox-jDQ"/>
+                            <constraint firstItem="Zih-lW-Q2R" firstAttribute="leading" secondItem="5yD-R8-fRG" secondAttribute="leading" constant="15" id="VcC-9R-fB2"/>
+                            <constraint firstItem="5yD-R8-fRG" firstAttribute="bottom" secondItem="nwU-9v-DxF" secondAttribute="bottom" constant="12" id="dXP-1H-r9F"/>
+                            <constraint firstItem="nwU-9v-DxF" firstAttribute="top" secondItem="CBs-kT-7Ba" secondAttribute="bottom" constant="8" id="fvu-Ro-SW4"/>
+                            <constraint firstItem="CBs-kT-7Ba" firstAttribute="top" secondItem="cYE-uG-oo1" secondAttribute="bottom" constant="5" id="gDn-0b-gbU"/>
+                            <constraint firstItem="Zih-lW-Q2R" firstAttribute="top" secondItem="5yD-R8-fRG" secondAttribute="top" constant="50" id="ksq-d2-xg3"/>
+                            <constraint firstItem="5yD-R8-fRG" firstAttribute="trailing" secondItem="nwU-9v-DxF" secondAttribute="trailing" constant="15" id="zBi-10-6Ik"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="სემესტრული" image="book" catalog="system" id="bnf-KA-01m"/>
+                    <connections>
+                        <outlet property="editButton" destination="4Dt-03-cPO" id="oh8-lC-O6A"/>
+                        <outlet property="segments" destination="cYE-uG-oo1" id="4V0-1i-9ok"/>
+                        <outlet property="semesterGPALabel" destination="Zih-lW-Q2R" id="3sh-99-MlN"/>
+                        <outlet property="table" destination="CBs-kT-7Ba" id="7J1-h7-QRi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BdM-Tl-avf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186.9565217391305" y="-126.5625"/>
+        </scene>
+        <!--ინფო-->
+        <scene sceneID="AZE-Kv-W8f">
+            <objects>
+                <viewController id="Tyd-M3-vFf" customClass="InfoPageViewController" customModule="BTU_GPU_calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HKW-n1-NGf">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nLF-8v-g1V">
+                                <rect key="frame" x="0.0" y="44" width="390" height="717"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InfoTableViewCell" rowHeight="246" id="Ffd-D3-d83" customClass="InfoTableViewCell" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="246"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ffd-D3-d83" id="SJk-gb-01H">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="246"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rve-ct-2Dp" customClass="CustomLabel" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                                    <rect key="frame" x="20" y="11" width="350" height="53"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="53" id="w8i-O9-w1q"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yO9-g1-bPk" customClass="CustomLabel2" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                                    <rect key="frame" x="35" y="84" width="320" height="136"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="yO9-g1-bPk" secondAttribute="bottom" constant="15" id="6Xf-Qd-Gbu"/>
+                                                <constraint firstItem="rve-ct-2Dp" firstAttribute="leading" secondItem="SJk-gb-01H" secondAttribute="leadingMargin" id="Ijz-Le-e4z"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="yO9-g1-bPk" secondAttribute="trailing" constant="15" id="SHT-0J-bEB"/>
+                                                <constraint firstItem="yO9-g1-bPk" firstAttribute="top" secondItem="rve-ct-2Dp" secondAttribute="bottom" constant="20" id="mt9-wn-YAR"/>
+                                                <constraint firstItem="rve-ct-2Dp" firstAttribute="top" secondItem="SJk-gb-01H" secondAttribute="topMargin" id="p3s-U0-yll"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="rve-ct-2Dp" secondAttribute="trailing" id="qfM-lF-Vo9"/>
+                                                <constraint firstItem="yO9-g1-bPk" firstAttribute="leading" secondItem="SJk-gb-01H" secondAttribute="leadingMargin" constant="15" id="vWJ-zo-peD"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="infoLabel" destination="yO9-g1-bPk" id="X9V-dK-e2J"/>
+                                            <outlet property="titleLabel" destination="rve-ct-2Dp" id="BOu-QV-Xwy"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CT1-uR-zg8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nLF-8v-g1V" firstAttribute="top" secondItem="CT1-uR-zg8" secondAttribute="top" id="0E5-V8-cKJ"/>
+                            <constraint firstItem="nLF-8v-g1V" firstAttribute="leading" secondItem="CT1-uR-zg8" secondAttribute="leading" id="GaD-uW-eEM"/>
+                            <constraint firstItem="CT1-uR-zg8" firstAttribute="trailing" secondItem="nLF-8v-g1V" secondAttribute="trailing" id="uZu-a9-lpB"/>
+                            <constraint firstItem="CT1-uR-zg8" firstAttribute="bottom" secondItem="nLF-8v-g1V" secondAttribute="bottom" id="xG7-Yy-5Pq"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="ინფო" image="info.circle" catalog="system" id="Jyf-IV-TUT"/>
+                    <connections>
+                        <outlet property="table" destination="nLF-8v-g1V" id="DOV-e9-DMa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oeQ-Ih-Fvc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186.9565217391305" y="533.70535714285711"/>
+        </scene>
+        <!--საგნის-->
+        <scene sceneID="Fks-Gn-inv">
+            <objects>
+                <viewController storyboardIdentifier="SubjectGPAViewController" id="F8S-dO-4lk" customClass="SubjectGPAViewController" customModule="BTU_GPU_calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CWW-Mw-Idi">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xsa-Ri-8gk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dtk-JM-Lsc">
+                                        <rect key="frame" x="0.0" y="250" width="390" height="388"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="396" id="QwK-5M-gcV"/>
+                                        </constraints>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="99" id="lCc-Xi-AUt" customClass="SubjectGPATableViewCell" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="24.333333969116211" width="390" height="99"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lCc-Xi-AUt" id="ESG-iG-TuH">
+                                                    <rect key="frame" x="0.0" y="0.0" width="390" height="99"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="საგნის საელი" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vNg-s4-shO" customClass="CustomTextField" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                                            <rect key="frame" x="20" y="29" width="224" height="41"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="224" id="LUW-Yy-vmg"/>
+                                                                <constraint firstAttribute="height" constant="34" id="mVx-Ma-Phx"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="=" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRP-DK-RKq" customClass="CustomLabel" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                                            <rect key="frame" x="317" y="29" width="73" height="41"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="34" id="JMR-UB-6Nr"/>
+                                                                <constraint firstAttribute="width" constant="73" id="yFq-CG-3zZ"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ქულა" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ae3-2f-UuF" customClass="CustomTextField" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                                            <rect key="frame" x="259" y="29" width="45" height="41"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="34" id="5l5-af-VjH"/>
+                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="65" id="QP0-h5-a1y"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                        </textField>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="ae3-2f-UuF" firstAttribute="leading" secondItem="vNg-s4-shO" secondAttribute="trailing" constant="15" id="0sd-pd-XKu"/>
+                                                        <constraint firstItem="vNg-s4-shO" firstAttribute="leading" secondItem="ESG-iG-TuH" secondAttribute="leadingMargin" id="55R-Zi-vMx"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="vNg-s4-shO" secondAttribute="bottom" constant="18" id="7fk-WQ-S58"/>
+                                                        <constraint firstItem="vNg-s4-shO" firstAttribute="leading" secondItem="ESG-iG-TuH" secondAttribute="leadingMargin" id="CGl-bB-9w3"/>
+                                                        <constraint firstAttribute="trailing" secondItem="jRP-DK-RKq" secondAttribute="trailing" id="EGc-xg-kMe"/>
+                                                        <constraint firstItem="vNg-s4-shO" firstAttribute="top" secondItem="ESG-iG-TuH" secondAttribute="topMargin" constant="18" id="EYd-bx-Esc"/>
+                                                        <constraint firstAttribute="bottom" secondItem="jRP-DK-RKq" secondAttribute="bottom" constant="29" id="Jof-z0-47H"/>
+                                                        <constraint firstItem="jRP-DK-RKq" firstAttribute="leading" secondItem="ae3-2f-UuF" secondAttribute="trailing" constant="13" id="M76-TC-ZFB"/>
+                                                        <constraint firstItem="jRP-DK-RKq" firstAttribute="bottom" secondItem="ae3-2f-UuF" secondAttribute="bottom" id="O0f-kH-19P"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="ae3-2f-UuF" secondAttribute="bottom" constant="18" id="U4Q-4n-ENr"/>
+                                                        <constraint firstItem="ae3-2f-UuF" firstAttribute="top" secondItem="ESG-iG-TuH" secondAttribute="topMargin" constant="18" id="he5-HP-S9P"/>
+                                                        <constraint firstItem="jRP-DK-RKq" firstAttribute="top" secondItem="ae3-2f-UuF" secondAttribute="top" id="hi0-bX-m2p"/>
+                                                        <constraint firstItem="vNg-s4-shO" firstAttribute="leading" secondItem="ESG-iG-TuH" secondAttribute="leadingMargin" id="hrv-pF-B2A"/>
+                                                    </constraints>
+                                                </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="GPALabel" destination="jRP-DK-RKq" id="Pbo-Og-YKI"/>
+                                                    <outlet property="subjectName" destination="vNg-s4-shO" id="KRh-hk-j9j"/>
+                                                    <outlet property="subjectNameLabel" destination="vNg-s4-shO" id="wTV-EF-dqy"/>
+                                                    <outlet property="subjectScore" destination="ae3-2f-UuF" id="AAv-t8-Rm6"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tcr-eS-ksz">
+                                        <rect key="frame" x="0.0" y="-11" width="390" height="0.0"/>
+                                        <items>
+                                            <navigationItem id="owf-SA-ZsO">
+                                                <barButtonItem key="rightBarButtonItem" systemItem="edit" id="1HV-jd-RlM">
+                                                    <connections>
+                                                        <action selector="onEdit:" destination="F8S-dO-4lk" id="2z1-vs-Dxh"/>
+                                                    </connections>
+                                                </barButtonItem>
+                                            </navigationItem>
+                                        </items>
+                                    </navigationBar>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eg-zy-91m" customClass="CustomButton" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="677" width="360" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="7tP-nT-mvK"/>
+                                        </constraints>
+                                        <state key="normal" title="დათვლა"/>
+                                        <connections>
+                                            <action selector="onCalculate:" destination="F8S-dO-4lk" eventType="touchUpInside" id="LAp-XA-S3O"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8I-ri-cZM" customClass="CustomButton" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                        <rect key="frame" x="15" y="639" width="360" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="cTy-Cg-ulL"/>
+                                        </constraints>
+                                        <state key="normal" title="საგნის დამატება"/>
+                                        <connections>
+                                            <action selector="onAddSubject:" destination="F8S-dO-4lk" eventType="touchUpInside" id="oKL-X2-jNd"/>
+                                        </connections>
+                                    </button>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0Zu-WB-VRf" customClass="CustomSegmentedControl" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="209" width="374" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="31" id="mBf-EB-Sr8"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="I სემესტრი"/>
+                                            <segment title="II სემესტრი"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="onSegmentChange:" destination="F8S-dO-4lk" eventType="valueChanged" id="W9j-hr-gwy"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btu_logo" translatesAutoresizingMaskIntoConstraints="NO" id="LFk-C8-7K7">
+                                        <rect key="frame" x="107" y="-11" width="176" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="7MF-DZ-NS2"/>
+                                            <constraint firstAttribute="height" constant="200" id="JeP-Up-qRb"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="tcr-eS-ksz" firstAttribute="trailing" secondItem="eYk-RP-sj4" secondAttribute="trailing" id="48N-ij-DGh"/>
+                                    <constraint firstItem="0Zu-WB-VRf" firstAttribute="leading" secondItem="eYk-RP-sj4" secondAttribute="leading" constant="8" id="4QB-b5-2oF"/>
+                                    <constraint firstItem="eYk-RP-sj4" firstAttribute="trailing" secondItem="Dtk-JM-Lsc" secondAttribute="trailing" id="4Ws-6C-XL3"/>
+                                    <constraint firstItem="eYk-RP-sj4" firstAttribute="bottom" secondItem="5eg-zy-91m" secondAttribute="bottom" constant="10" id="6jg-xx-RmA"/>
+                                    <constraint firstItem="eYk-RP-sj4" firstAttribute="trailing" secondItem="5eg-zy-91m" secondAttribute="trailing" constant="15" id="7KO-hs-Mlp"/>
+                                    <constraint firstItem="tcr-eS-ksz" firstAttribute="leading" secondItem="eYk-RP-sj4" secondAttribute="leading" id="99e-0E-xl6"/>
+                                    <constraint firstItem="5eg-zy-91m" firstAttribute="leading" secondItem="eYk-RP-sj4" secondAttribute="leading" constant="15" id="CET-rE-xqx"/>
+                                    <constraint firstItem="LFk-C8-7K7" firstAttribute="top" secondItem="tcr-eS-ksz" secondAttribute="bottom" id="Cvl-aH-OWq"/>
+                                    <constraint firstItem="tcr-eS-ksz" firstAttribute="top" secondItem="xsa-Ri-8gk" secondAttribute="top" constant="-11" id="PoO-ok-0m5"/>
+                                    <constraint firstItem="eYk-RP-sj4" firstAttribute="trailing" secondItem="0Zu-WB-VRf" secondAttribute="trailing" constant="8" id="Q9U-MC-7Gc"/>
+                                    <constraint firstItem="LFk-C8-7K7" firstAttribute="leading" secondItem="eYk-RP-sj4" secondAttribute="leading" constant="107" id="QIv-ps-1Ns"/>
+                                    <constraint firstItem="f8I-ri-cZM" firstAttribute="leading" secondItem="eYk-RP-sj4" secondAttribute="leading" constant="15" id="b7A-XH-UyQ"/>
+                                    <constraint firstItem="eYk-RP-sj4" firstAttribute="trailing" secondItem="f8I-ri-cZM" secondAttribute="trailing" constant="15" id="gaF-Sy-Nbv"/>
+                                    <constraint firstItem="0Zu-WB-VRf" firstAttribute="top" secondItem="LFk-C8-7K7" secondAttribute="bottom" constant="20" id="ldT-w7-lSe"/>
+                                    <constraint firstItem="eYk-RP-sj4" firstAttribute="trailing" secondItem="0Zu-WB-VRf" secondAttribute="trailing" constant="8" id="lmj-1W-j3O"/>
+                                    <constraint firstItem="Dtk-JM-Lsc" firstAttribute="top" secondItem="0Zu-WB-VRf" secondAttribute="bottom" constant="10" id="o79-AW-5Dl"/>
+                                    <constraint firstItem="eYk-RP-sj4" firstAttribute="trailing" secondItem="LFk-C8-7K7" secondAttribute="trailing" constant="107" id="oOc-lN-MWY"/>
+                                    <constraint firstItem="5eg-zy-91m" firstAttribute="top" secondItem="f8I-ri-cZM" secondAttribute="bottom" constant="8" symbolic="YES" id="pFn-Ag-3jX"/>
+                                    <constraint firstItem="0Zu-WB-VRf" firstAttribute="leading" secondItem="eYk-RP-sj4" secondAttribute="leading" constant="8" id="tNs-F9-heo"/>
+                                    <constraint firstItem="f8I-ri-cZM" firstAttribute="top" secondItem="Dtk-JM-Lsc" secondAttribute="bottom" constant="1" id="uCe-BN-Dht"/>
+                                    <constraint firstItem="LFk-C8-7K7" firstAttribute="leading" secondItem="eYk-RP-sj4" secondAttribute="leading" constant="107" id="vR7-jO-Xid"/>
+                                    <constraint firstItem="eYk-RP-sj4" firstAttribute="trailing" secondItem="LFk-C8-7K7" secondAttribute="trailing" constant="107" id="xkd-yn-0Pa"/>
+                                    <constraint firstItem="Dtk-JM-Lsc" firstAttribute="leading" secondItem="eYk-RP-sj4" secondAttribute="leading" id="yjs-xp-moN"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="P8x-3F-Tto"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="eYk-RP-sj4"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="So9-xg-oMl"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xsa-Ri-8gk" firstAttribute="trailing" secondItem="So9-xg-oMl" secondAttribute="trailing" id="2yC-Tz-GxZ"/>
+                            <constraint firstItem="xsa-Ri-8gk" firstAttribute="top" secondItem="So9-xg-oMl" secondAttribute="top" id="EjR-zC-1k5"/>
+                            <constraint firstItem="xsa-Ri-8gk" firstAttribute="leading" secondItem="So9-xg-oMl" secondAttribute="leading" id="ORZ-FB-C6Y"/>
+                            <constraint firstItem="xsa-Ri-8gk" firstAttribute="bottom" secondItem="So9-xg-oMl" secondAttribute="bottom" id="xqn-90-VMy"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="საგნის" image="highlighter" catalog="system" id="yeD-cZ-lIY"/>
+                    <connections>
+                        <outlet property="editButton" destination="1HV-jd-RlM" id="KZg-ka-ttd"/>
+                        <outlet property="table" destination="Dtk-JM-Lsc" id="NBh-dY-AXV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sgu-Bo-R0h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186.9565217391305" y="-852.45535714285711"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="RSu-bU-m3c">
+            <objects>
+                <tabBarController id="YTw-Pg-OKM" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jGB-2O-u6c">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="F8S-dO-4lk" kind="relationship" relationship="viewControllers" id="lNH-7T-ZJ4"/>
+                        <segue destination="76c-vh-j1X" kind="relationship" relationship="viewControllers" id="iCr-Bf-QHF"/>
+                        <segue destination="Tyd-M3-vFf" kind="relationship" relationship="viewControllers" id="qbE-lJ-4T3"/>
+                        <segue destination="e9q-tr-6L7" kind="relationship" relationship="viewControllers" id="YVD-3P-fja"/>
+                        <segue destination="Vx7-zg-D87" kind="relationship" relationship="viewControllers" id="Qsx-te-HU6"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Nx-kB-4vb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1152" y="133"/>
+        </scene>
+        <!--სადიპლომო-->
+        <scene sceneID="T79-Zi-pnG">
+            <objects>
+                <viewController id="Vx7-zg-D87" customClass="DiplomaGPAViewController" customModule="BTU_GPU_calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hVe-Kc-Qlp">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="სადიპლომო GPA" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2SA-HM-RVG">
+                                <rect key="frame" x="0.0" y="44" width="390" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="UKh-Bk-OT8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ოთხივე წლის მონაცემები შეყვანილი არ არის." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="1" translatesAutoresizingMaskIntoConstraints="NO" id="JlD-10-T1L" customClass="CustomLabel" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                <rect key="frame" x="15" y="230" width="360" height="92"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="6XY-W2-a45"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <color key="textColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="txtColor">
+                                        <color key="value" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5V-5V-9ds" customClass="CustomButton" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                <rect key="frame" x="15" y="472" width="360" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="h1L-i0-QKO"/>
+                                </constraints>
+                                <state key="normal" title="დათვლა"/>
+                                <connections>
+                                    <action selector="onCalculate:" destination="Vx7-zg-D87" eventType="touchUpInside" id="sHi-6P-nYY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="r7K-Jb-pMT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="r7K-Jb-pMT" firstAttribute="trailing" secondItem="x5V-5V-9ds" secondAttribute="trailing" constant="15" id="DO1-AO-HLH"/>
+                            <constraint firstItem="2SA-HM-RVG" firstAttribute="top" secondItem="r7K-Jb-pMT" secondAttribute="top" id="IxH-da-TmS"/>
+                            <constraint firstItem="JlD-10-T1L" firstAttribute="top" secondItem="2SA-HM-RVG" secondAttribute="bottom" constant="121" id="T2z-dS-qpV"/>
+                            <constraint firstItem="r7K-Jb-pMT" firstAttribute="trailing" secondItem="2SA-HM-RVG" secondAttribute="trailing" id="VuN-vQ-euF"/>
+                            <constraint firstItem="x5V-5V-9ds" firstAttribute="top" secondItem="JlD-10-T1L" secondAttribute="bottom" constant="150" id="WgV-4n-WRB"/>
+                            <constraint firstItem="JlD-10-T1L" firstAttribute="leading" secondItem="r7K-Jb-pMT" secondAttribute="leading" constant="15" id="X5K-Pw-DBL"/>
+                            <constraint firstAttribute="trailing" secondItem="JlD-10-T1L" secondAttribute="trailing" constant="15" id="Yyo-cP-Adq"/>
+                            <constraint firstItem="x5V-5V-9ds" firstAttribute="leading" secondItem="r7K-Jb-pMT" secondAttribute="leading" constant="15" id="bit-DH-xEB"/>
+                            <constraint firstItem="2SA-HM-RVG" firstAttribute="leading" secondItem="hVe-Kc-Qlp" secondAttribute="leading" id="moJ-fg-hSJ"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="სადიპლომო" image="graduationcap" catalog="system" id="S9s-2i-Ye6"/>
+                    <connections>
+                        <outlet property="gpaLabel" destination="JlD-10-T1L" id="iHl-a4-xlR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Fx-b1-KeT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186.1538461538462" y="1980.5687203791467"/>
+        </scene>
+        <!--წლიური-->
+        <scene sceneID="Q0a-RF-RS9">
+            <objects>
+                <viewController storyboardIdentifier="YearlyGPAViewController" id="e9q-tr-6L7" customClass="YearlyGPAViewController" customModule="BTU_GPU_calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="71G-pK-OGt">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="წლიური GPA" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vlc-f6-j8y">
+                                <rect key="frame" x="0.0" y="44" width="390" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="390" id="Caz-Lz-pmw"/>
+                                    <constraint firstAttribute="height" constant="100" id="dAf-Dl-ld8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="1" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8D4-F2-HaG" customClass="CustomLabel2" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                <rect key="frame" x="10" y="273" width="370" height="67"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="წელიწადში ასაღები კრედიტების ჯამი" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QcX-pK-PEW" customClass="CustomTextField" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                <rect key="frame" x="15" y="390" width="360" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="I8K-TZ-xDp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8w-9Q-Bbi" customClass="CustomButton" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                <rect key="frame" x="15" y="456" width="360" height="30"/>
+                                <state key="normal" title="დათვლა"/>
+                                <connections>
+                                    <action selector="onCalculate:" destination="e9q-tr-6L7" eventType="touchUpInside" id="TuC-af-Xvr"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ERB-Jl-5Fa" customClass="CustomSegmentedControl" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                <rect key="frame" x="15" y="164" width="360" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="zzG-Hl-yzk"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="I წელი"/>
+                                    <segment title="II წელი"/>
+                                    <segment title="III წელი"/>
+                                    <segment title="IV წელი"/>
+                                </segments>
+                                <connections>
+                                    <action selector="onSegmentChange:" destination="e9q-tr-6L7" eventType="valueChanged" id="F2i-hj-JfM"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Uad-bY-ahX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QcX-pK-PEW" firstAttribute="leading" secondItem="Uad-bY-ahX" secondAttribute="leading" constant="15" id="9TK-6m-wAx"/>
+                            <constraint firstItem="l8w-9Q-Bbi" firstAttribute="leading" secondItem="Uad-bY-ahX" secondAttribute="leading" constant="15" id="9yy-WN-ecQ"/>
+                            <constraint firstItem="Uad-bY-ahX" firstAttribute="trailing" secondItem="QcX-pK-PEW" secondAttribute="trailing" constant="15" id="G7g-54-q0k"/>
+                            <constraint firstItem="Uad-bY-ahX" firstAttribute="trailing" secondItem="l8w-9Q-Bbi" secondAttribute="trailing" constant="15" id="GAD-Gu-pbX"/>
+                            <constraint firstItem="ERB-Jl-5Fa" firstAttribute="top" secondItem="vlc-f6-j8y" secondAttribute="bottom" constant="20" id="J3U-TS-DgF"/>
+                            <constraint firstItem="Uad-bY-ahX" firstAttribute="trailing" secondItem="QcX-pK-PEW" secondAttribute="trailing" constant="15" id="L2g-ZG-S2Q"/>
+                            <constraint firstItem="QcX-pK-PEW" firstAttribute="leading" secondItem="Uad-bY-ahX" secondAttribute="leading" constant="15" id="Ru6-Gb-M3t"/>
+                            <constraint firstItem="8D4-F2-HaG" firstAttribute="leading" secondItem="Uad-bY-ahX" secondAttribute="leading" constant="10" id="XSa-eR-OxT"/>
+                            <constraint firstItem="Uad-bY-ahX" firstAttribute="trailing" secondItem="8D4-F2-HaG" secondAttribute="trailing" constant="10" id="bjg-XS-c7w"/>
+                            <constraint firstItem="Uad-bY-ahX" firstAttribute="trailing" secondItem="l8w-9Q-Bbi" secondAttribute="trailing" constant="15" id="bvo-lm-zlT"/>
+                            <constraint firstItem="QcX-pK-PEW" firstAttribute="top" secondItem="8D4-F2-HaG" secondAttribute="bottom" constant="50" id="dhX-IM-raM"/>
+                            <constraint firstItem="vlc-f6-j8y" firstAttribute="top" secondItem="Uad-bY-ahX" secondAttribute="top" id="e79-2y-PsZ"/>
+                            <constraint firstItem="ERB-Jl-5Fa" firstAttribute="leading" secondItem="Uad-bY-ahX" secondAttribute="leading" constant="15" id="gQu-F3-Fx1"/>
+                            <constraint firstItem="8D4-F2-HaG" firstAttribute="top" secondItem="ERB-Jl-5Fa" secondAttribute="bottom" constant="78" id="jCy-U0-BUU"/>
+                            <constraint firstItem="Uad-bY-ahX" firstAttribute="trailing" secondItem="ERB-Jl-5Fa" secondAttribute="trailing" constant="15" id="kZ3-aq-Vfe"/>
+                            <constraint firstItem="l8w-9Q-Bbi" firstAttribute="top" secondItem="QcX-pK-PEW" secondAttribute="bottom" constant="32" id="kdu-ic-TEY"/>
+                            <constraint firstItem="vlc-f6-j8y" firstAttribute="leading" secondItem="Uad-bY-ahX" secondAttribute="leading" id="omF-m4-QMY"/>
+                            <constraint firstItem="l8w-9Q-Bbi" firstAttribute="leading" secondItem="Uad-bY-ahX" secondAttribute="leading" constant="15" id="qne-pw-M1o"/>
+                            <constraint firstItem="vlc-f6-j8y" firstAttribute="trailing" secondItem="Uad-bY-ahX" secondAttribute="trailing" id="xU9-En-zfG"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="წლიური" image="books.vertical" catalog="system" id="mVt-o0-GIZ"/>
+                    <connections>
+                        <outlet property="CreditsSumField" destination="QcX-pK-PEW" id="FDt-Jb-PkH"/>
+                        <outlet property="YearlyGPALabel" destination="8D4-F2-HaG" id="1p4-7d-uEi"/>
+                        <outlet property="yearlySegment" destination="ERB-Jl-5Fa" id="XI9-iE-RtM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5qa-of-ROt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1186.1538461538462" y="1232.7014218009479"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="0Zu-WB-VRf">
+            <size key="intrinsicContentSize" width="187" height="31"/>
+        </designable>
+        <designable name="5eg-zy-91m">
+            <size key="intrinsicContentSize" width="65" height="30"/>
+        </designable>
+        <designable name="OiX-er-W2L">
+            <size key="intrinsicContentSize" width="122" height="34"/>
+        </designable>
+        <designable name="TlB-aL-k1t">
+            <size key="intrinsicContentSize" width="56" height="34"/>
+        </designable>
+        <designable name="ae3-2f-UuF">
+            <size key="intrinsicContentSize" width="65" height="34"/>
+        </designable>
+        <designable name="f8I-ri-cZM">
+            <size key="intrinsicContentSize" width="127" height="30"/>
+        </designable>
+        <designable name="hnr-u1-ncK">
+            <size key="intrinsicContentSize" width="132" height="34"/>
+        </designable>
+        <designable name="jRP-DK-RKq">
+            <size key="intrinsicContentSize" width="15.333333333333334" height="30"/>
+        </designable>
+        <designable name="rve-ct-2Dp">
+            <size key="intrinsicContentSize" width="165" height="40.333333333333336"/>
+        </designable>
+        <designable name="vNg-s4-shO">
+            <size key="intrinsicContentSize" width="123.33333333333333" height="34"/>
+        </designable>
+        <designable name="yO9-g1-bPk">
+            <size key="intrinsicContentSize" width="75" height="19"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="book" catalog="system" width="128" height="102"/>
+        <image name="books.vertical" catalog="system" width="128" height="103"/>
+        <image name="btu_logo" width="800" height="800"/>
+        <image name="graduationcap" catalog="system" width="128" height="106"/>
+        <image name="highlighter" catalog="system" width="128" height="119"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

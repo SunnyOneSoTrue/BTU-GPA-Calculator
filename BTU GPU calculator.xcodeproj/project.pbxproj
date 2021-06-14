@@ -1,0 +1,728 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE5849FB2675F0340001E370 /* YearlyGPAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5849FA2675F0340001E370 /* YearlyGPAViewController.swift */; };
+		CE5849FE26766A1D0001E370 /* InfoPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5849FD26766A1D0001E370 /* InfoPageViewController.swift */; };
+		CE584A0026766CDB0001E370 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5849FF26766CDB0001E370 /* InfoTableViewCell.swift */; };
+		CE595D7726700E9800D54EEF /* SemesterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE595D7626700E9800D54EEF /* SemesterTableViewCell.swift */; };
+		CE7586A12656D3F3001D8C6A /* SubjectGPAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7586A02656D3F3001D8C6A /* SubjectGPAViewController.swift */; };
+		CE7586A52656D551001D8C6A /* SubjectGPATableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7586A42656D551001D8C6A /* SubjectGPATableViewCell.swift */; };
+		CE7624792677868B00399E37 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7624782677868B00399E37 /* CustomButton.swift */; };
+		CE81458626467D7300A90063 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81458526467D7300A90063 /* AppDelegate.swift */; };
+		CE81458826467D7300A90063 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81458726467D7300A90063 /* SceneDelegate.swift */; };
+		CE81458D26467D7300A90063 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE81458B26467D7300A90063 /* Main.storyboard */; };
+		CE81458F26467D7400A90063 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE81458E26467D7400A90063 /* Assets.xcassets */; };
+		CE81459226467D7400A90063 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE81459026467D7400A90063 /* LaunchScreen.storyboard */; };
+		CE81459D26467D7400A90063 /* BTU_GPU_calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81459C26467D7400A90063 /* BTU_GPU_calculatorTests.swift */; };
+		CE8145A826467D7400A90063 /* BTU_GPU_calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8145A726467D7400A90063 /* BTU_GPU_calculatorUITests.swift */; };
+		CE875C0E2677658F006F4928 /* DiplomaGPAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE875C0D2677658F006F4928 /* DiplomaGPAViewController.swift */; };
+		CE9539C826778C54005B7DBB /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9539C726778C54005B7DBB /* CustomTextField.swift */; };
+		CE9539CA267795F4005B7DBB /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9539C9267795F4005B7DBB /* CustomSegmentedControl.swift */; };
+		CE9539CC26779B5D005B7DBB /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9539CB26779B5D005B7DBB /* CustomLabel.swift */; };
+		CE9539CE2677A314005B7DBB /* CustomLabel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9539CD2677A314005B7DBB /* CustomLabel2.swift */; };
+		CEE19BAD266574C900E4B972 /* SemesterGPAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE19BAC266574C900E4B972 /* SemesterGPAViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE81459926467D7400A90063 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE81457A26467D7300A90063 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE81458126467D7300A90063;
+			remoteInfo = "BTU GPU calculator";
+		};
+		CE8145A426467D7400A90063 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE81457A26467D7300A90063 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE81458126467D7300A90063;
+			remoteInfo = "BTU GPU calculator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE5849FA2675F0340001E370 /* YearlyGPAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YearlyGPAViewController.swift; sourceTree = "<group>"; };
+		CE5849FD26766A1D0001E370 /* InfoPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPageViewController.swift; sourceTree = "<group>"; };
+		CE5849FF26766CDB0001E370 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		CE595D7626700E9800D54EEF /* SemesterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemesterTableViewCell.swift; sourceTree = "<group>"; };
+		CE7586A02656D3F3001D8C6A /* SubjectGPAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectGPAViewController.swift; sourceTree = "<group>"; };
+		CE7586A42656D551001D8C6A /* SubjectGPATableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectGPATableViewCell.swift; sourceTree = "<group>"; };
+		CE7624782677868B00399E37 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		CE81458226467D7300A90063 /* BTU GPU calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BTU GPU calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE81458526467D7300A90063 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CE81458726467D7300A90063 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CE81458C26467D7300A90063 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE81458E26467D7400A90063 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CE81459126467D7400A90063 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CE81459326467D7400A90063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE81459826467D7400A90063 /* BTU GPU calculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BTU GPU calculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE81459C26467D7400A90063 /* BTU_GPU_calculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTU_GPU_calculatorTests.swift; sourceTree = "<group>"; };
+		CE81459E26467D7400A90063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE8145A326467D7400A90063 /* BTU GPU calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BTU GPU calculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE8145A726467D7400A90063 /* BTU_GPU_calculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BTU_GPU_calculatorUITests.swift; sourceTree = "<group>"; };
+		CE8145A926467D7400A90063 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE875C0D2677658F006F4928 /* DiplomaGPAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiplomaGPAViewController.swift; sourceTree = "<group>"; };
+		CE9539C726778C54005B7DBB /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		CE9539C9267795F4005B7DBB /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		CE9539CB26779B5D005B7DBB /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		CE9539CD2677A314005B7DBB /* CustomLabel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel2.swift; sourceTree = "<group>"; };
+		CEE19BAC266574C900E4B972 /* SemesterGPAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemesterGPAViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE81457F26467D7300A90063 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE81459526467D7400A90063 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8145A026467D7400A90063 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE5849F92675F01D0001E370 /* Yearly GPA */ = {
+			isa = PBXGroup;
+			children = (
+				CE5849FA2675F0340001E370 /* YearlyGPAViewController.swift */,
+			);
+			name = "Yearly GPA";
+			sourceTree = "<group>";
+		};
+		CE5849FC26766A010001E370 /* InfoPage */ = {
+			isa = PBXGroup;
+			children = (
+				CE5849FD26766A1D0001E370 /* InfoPageViewController.swift */,
+				CE5849FF26766CDB0001E370 /* InfoTableViewCell.swift */,
+			);
+			name = InfoPage;
+			sourceTree = "<group>";
+		};
+		CE6F7499265E4AEF00222306 /* Semester GPA */ = {
+			isa = PBXGroup;
+			children = (
+				CE884FC32670E07200D2CF95 /* ViewController */,
+				CE884FC12670E05600D2CF95 /* TableViewCell */,
+			);
+			name = "Semester GPA";
+			sourceTree = "<group>";
+		};
+		CE75869F2656D3B3001D8C6A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CE875C0C26776575006F4928 /* DiplomaGPA */,
+				CE5849F92675F01D0001E370 /* Yearly GPA */,
+				CE5849FC26766A010001E370 /* InfoPage */,
+				CE6F7499265E4AEF00222306 /* Semester GPA */,
+				CE7586A62656D561001D8C6A /* subject GPA */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CE7586A32656D528001D8C6A /* TableviewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE7586A42656D551001D8C6A /* SubjectGPATableViewCell.swift */,
+			);
+			name = TableviewCell;
+			sourceTree = "<group>";
+		};
+		CE7586A62656D561001D8C6A /* subject GPA */ = {
+			isa = PBXGroup;
+			children = (
+				CE884FC22670E06500D2CF95 /* ViewController */,
+				CE7586A32656D528001D8C6A /* TableviewCell */,
+			);
+			name = "subject GPA";
+			sourceTree = "<group>";
+		};
+		CE7624772677863B00399E37 /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				CE7624782677868B00399E37 /* CustomButton.swift */,
+				CE9539C726778C54005B7DBB /* CustomTextField.swift */,
+				CE9539C9267795F4005B7DBB /* CustomSegmentedControl.swift */,
+				CE9539CB26779B5D005B7DBB /* CustomLabel.swift */,
+				CE9539CD2677A314005B7DBB /* CustomLabel2.swift */,
+			);
+			path = CustomClasses;
+			sourceTree = "<group>";
+		};
+		CE81457926467D7300A90063 = {
+			isa = PBXGroup;
+			children = (
+				CE81458426467D7300A90063 /* BTU GPU calculator */,
+				CE81459B26467D7400A90063 /* BTU GPU calculatorTests */,
+				CE8145A626467D7400A90063 /* BTU GPU calculatorUITests */,
+				CE81458326467D7300A90063 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE81458326467D7300A90063 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE81458226467D7300A90063 /* BTU GPU calculator.app */,
+				CE81459826467D7400A90063 /* BTU GPU calculatorTests.xctest */,
+				CE8145A326467D7400A90063 /* BTU GPU calculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE81458426467D7300A90063 /* BTU GPU calculator */ = {
+			isa = PBXGroup;
+			children = (
+				CE7624772677863B00399E37 /* CustomClasses */,
+				CE75869F2656D3B3001D8C6A /* ViewControllers */,
+				CE81458526467D7300A90063 /* AppDelegate.swift */,
+				CE81458726467D7300A90063 /* SceneDelegate.swift */,
+				CE81458B26467D7300A90063 /* Main.storyboard */,
+				CE81458E26467D7400A90063 /* Assets.xcassets */,
+				CE81459026467D7400A90063 /* LaunchScreen.storyboard */,
+				CE81459326467D7400A90063 /* Info.plist */,
+			);
+			path = "BTU GPU calculator";
+			sourceTree = "<group>";
+		};
+		CE81459B26467D7400A90063 /* BTU GPU calculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				CE81459C26467D7400A90063 /* BTU_GPU_calculatorTests.swift */,
+				CE81459E26467D7400A90063 /* Info.plist */,
+			);
+			path = "BTU GPU calculatorTests";
+			sourceTree = "<group>";
+		};
+		CE8145A626467D7400A90063 /* BTU GPU calculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CE8145A726467D7400A90063 /* BTU_GPU_calculatorUITests.swift */,
+				CE8145A926467D7400A90063 /* Info.plist */,
+			);
+			path = "BTU GPU calculatorUITests";
+			sourceTree = "<group>";
+		};
+		CE875C0C26776575006F4928 /* DiplomaGPA */ = {
+			isa = PBXGroup;
+			children = (
+				CE875C0D2677658F006F4928 /* DiplomaGPAViewController.swift */,
+			);
+			name = DiplomaGPA;
+			sourceTree = "<group>";
+		};
+		CE884FC12670E05600D2CF95 /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE595D7626700E9800D54EEF /* SemesterTableViewCell.swift */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		CE884FC22670E06500D2CF95 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE7586A02656D3F3001D8C6A /* SubjectGPAViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		CE884FC32670E07200D2CF95 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CEE19BAC266574C900E4B972 /* SemesterGPAViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE81458126467D7300A90063 /* BTU GPU calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8145AC26467D7400A90063 /* Build configuration list for PBXNativeTarget "BTU GPU calculator" */;
+			buildPhases = (
+				CE81457E26467D7300A90063 /* Sources */,
+				CE81457F26467D7300A90063 /* Frameworks */,
+				CE81458026467D7300A90063 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BTU GPU calculator";
+			productName = "BTU GPU calculator";
+			productReference = CE81458226467D7300A90063 /* BTU GPU calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE81459726467D7400A90063 /* BTU GPU calculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8145AF26467D7400A90063 /* Build configuration list for PBXNativeTarget "BTU GPU calculatorTests" */;
+			buildPhases = (
+				CE81459426467D7400A90063 /* Sources */,
+				CE81459526467D7400A90063 /* Frameworks */,
+				CE81459626467D7400A90063 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE81459A26467D7400A90063 /* PBXTargetDependency */,
+			);
+			name = "BTU GPU calculatorTests";
+			productName = "BTU GPU calculatorTests";
+			productReference = CE81459826467D7400A90063 /* BTU GPU calculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CE8145A226467D7400A90063 /* BTU GPU calculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE8145B226467D7400A90063 /* Build configuration list for PBXNativeTarget "BTU GPU calculatorUITests" */;
+			buildPhases = (
+				CE81459F26467D7400A90063 /* Sources */,
+				CE8145A026467D7400A90063 /* Frameworks */,
+				CE8145A126467D7400A90063 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE8145A526467D7400A90063 /* PBXTargetDependency */,
+			);
+			name = "BTU GPU calculatorUITests";
+			productName = "BTU GPU calculatorUITests";
+			productReference = CE8145A326467D7400A90063 /* BTU GPU calculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE81457A26467D7300A90063 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					CE81458126467D7300A90063 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					CE81459726467D7400A90063 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = CE81458126467D7300A90063;
+					};
+					CE8145A226467D7400A90063 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = CE81458126467D7300A90063;
+					};
+				};
+			};
+			buildConfigurationList = CE81457D26467D7300A90063 /* Build configuration list for PBXProject "BTU GPU calculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CE81457926467D7300A90063;
+			productRefGroup = CE81458326467D7300A90063 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE81458126467D7300A90063 /* BTU GPU calculator */,
+				CE81459726467D7400A90063 /* BTU GPU calculatorTests */,
+				CE8145A226467D7400A90063 /* BTU GPU calculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE81458026467D7300A90063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE81459226467D7400A90063 /* LaunchScreen.storyboard in Resources */,
+				CE81458F26467D7400A90063 /* Assets.xcassets in Resources */,
+				CE81458D26467D7300A90063 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE81459626467D7400A90063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8145A126467D7400A90063 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE81457E26467D7300A90063 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE81458626467D7300A90063 /* AppDelegate.swift in Sources */,
+				CE5849FB2675F0340001E370 /* YearlyGPAViewController.swift in Sources */,
+				CEE19BAD266574C900E4B972 /* SemesterGPAViewController.swift in Sources */,
+				CE9539CC26779B5D005B7DBB /* CustomLabel.swift in Sources */,
+				CE584A0026766CDB0001E370 /* InfoTableViewCell.swift in Sources */,
+				CE7586A12656D3F3001D8C6A /* SubjectGPAViewController.swift in Sources */,
+				CE9539CE2677A314005B7DBB /* CustomLabel2.swift in Sources */,
+				CE81458826467D7300A90063 /* SceneDelegate.swift in Sources */,
+				CE7586A52656D551001D8C6A /* SubjectGPATableViewCell.swift in Sources */,
+				CE7624792677868B00399E37 /* CustomButton.swift in Sources */,
+				CE9539CA267795F4005B7DBB /* CustomSegmentedControl.swift in Sources */,
+				CE9539C826778C54005B7DBB /* CustomTextField.swift in Sources */,
+				CE595D7726700E9800D54EEF /* SemesterTableViewCell.swift in Sources */,
+				CE875C0E2677658F006F4928 /* DiplomaGPAViewController.swift in Sources */,
+				CE5849FE26766A1D0001E370 /* InfoPageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE81459426467D7400A90063 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE81459D26467D7400A90063 /* BTU_GPU_calculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE81459F26467D7400A90063 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE8145A826467D7400A90063 /* BTU_GPU_calculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE81459A26467D7400A90063 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE81458126467D7300A90063 /* BTU GPU calculator */;
+			targetProxy = CE81459926467D7400A90063 /* PBXContainerItemProxy */;
+		};
+		CE8145A526467D7400A90063 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE81458126467D7300A90063 /* BTU GPU calculator */;
+			targetProxy = CE8145A426467D7400A90063 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE81458B26467D7300A90063 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE81458C26467D7300A90063 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CE81459026467D7400A90063 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE81459126467D7400A90063 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE8145AA26467D7400A90063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CE8145AB26467D7400A90063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CE8145AD26467D7400A90063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "BTU GPU calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.BTU-GPU-calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE8145AE26467D7400A90063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "BTU GPU calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.BTU-GPU-calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CE8145B026467D7400A90063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "BTU GPU calculatorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.BTU-GPU-calculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BTU GPU calculator.app/BTU GPU calculator";
+			};
+			name = Debug;
+		};
+		CE8145B126467D7400A90063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "BTU GPU calculatorTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.BTU-GPU-calculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BTU GPU calculator.app/BTU GPU calculator";
+			};
+			name = Release;
+		};
+		CE8145B326467D7400A90063 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "BTU GPU calculatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.BTU-GPU-calculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BTU GPU calculator";
+			};
+			name = Debug;
+		};
+		CE8145B426467D7400A90063 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "BTU GPU calculatorUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.BTU-GPU-calculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "BTU GPU calculator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE81457D26467D7300A90063 /* Build configuration list for PBXProject "BTU GPU calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8145AA26467D7400A90063 /* Debug */,
+				CE8145AB26467D7400A90063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE8145AC26467D7400A90063 /* Build configuration list for PBXNativeTarget "BTU GPU calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8145AD26467D7400A90063 /* Debug */,
+				CE8145AE26467D7400A90063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE8145AF26467D7400A90063 /* Build configuration list for PBXNativeTarget "BTU GPU calculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8145B026467D7400A90063 /* Debug */,
+				CE8145B126467D7400A90063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE8145B226467D7400A90063 /* Build configuration list for PBXNativeTarget "BTU GPU calculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE8145B326467D7400A90063 /* Debug */,
+				CE8145B426467D7400A90063 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE81457A26467D7300A90063 /* Project object */;
+}
