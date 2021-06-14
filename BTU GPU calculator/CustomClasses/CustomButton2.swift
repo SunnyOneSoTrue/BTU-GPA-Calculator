@@ -9,7 +9,7 @@ import Foundation
 
 import UIKit
 
-@IBDesignable class CustomButton: UIButton {
+@IBDesignable class CustomButton2: UIButton {
     
     // MARK: - Initialization
     override init(frame: CGRect) {
@@ -37,7 +37,7 @@ import UIKit
     
     // MARK: - Properties
     @IBInspectable
-    var bgColor: UIColor = UIColor(red: 0.03, green: 0.00, blue: 0.68, alpha: 1.00) {
+    var bgColor: UIColor = UIColor(red: 1.00, green: 0.00, blue: 0.49, alpha: 1.00) {
         didSet {
             self.backgroundColor = bgColor
         }
