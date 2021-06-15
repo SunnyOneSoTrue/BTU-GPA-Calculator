@@ -28,6 +28,7 @@
 		CE9539CC26779B5D005B7DBB /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9539CB26779B5D005B7DBB /* CustomLabel.swift */; };
 		CE9539CE2677A314005B7DBB /* CustomLabel2.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9539CD2677A314005B7DBB /* CustomLabel2.swift */; };
 		CEE19BAD266574C900E4B972 /* SemesterGPAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE19BAC266574C900E4B972 /* SemesterGPAViewController.swift */; };
+		CEE6593426788AD9001F593A /* CustomTextFieldBlue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6593326788AD9001F593A /* CustomTextFieldBlue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		CE9539CB26779B5D005B7DBB /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		CE9539CD2677A314005B7DBB /* CustomLabel2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel2.swift; sourceTree = "<group>"; };
 		CEE19BAC266574C900E4B972 /* SemesterGPAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SemesterGPAViewController.swift; sourceTree = "<group>"; };
+		CEE6593326788AD9001F593A /* CustomTextFieldBlue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldBlue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE4F7432267871E4002A71FF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE5849FD26766A1D0001E370 /* InfoPageViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		CE4F7433267871EF002A71FF /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				CE5849FF26766CDB0001E370 /* InfoTableViewCell.swift */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
 		CE5849F92675F01D0001E370 /* Yearly GPA */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,8 +131,8 @@
 		CE5849FC26766A010001E370 /* InfoPage */ = {
 			isa = PBXGroup;
 			children = (
-				CE5849FD26766A1D0001E370 /* InfoPageViewController.swift */,
-				CE5849FF26766CDB0001E370 /* InfoTableViewCell.swift */,
+				CE4F7432267871E4002A71FF /* ViewController */,
+				CE4F7433267871EF002A71FF /* TableViewCell */,
 			);
 			name = InfoPage;
 			sourceTree = "<group>";
@@ -163,6 +181,7 @@
 				CE7624782677868B00399E37 /* CustomButton.swift */,
 				CE2680DE2677CB71000BA800 /* CustomButton2.swift */,
 				CE9539C726778C54005B7DBB /* CustomTextField.swift */,
+				CEE6593326788AD9001F593A /* CustomTextFieldBlue.swift */,
 				CE9539C9267795F4005B7DBB /* CustomSegmentedControl.swift */,
 				CE9539CB26779B5D005B7DBB /* CustomLabel.swift */,
 				CE9539CD2677A314005B7DBB /* CustomLabel2.swift */,
@@ -395,6 +414,7 @@
 				CE2680DF2677CB71000BA800 /* CustomButton2.swift in Sources */,
 				CE81458826467D7300A90063 /* SceneDelegate.swift in Sources */,
 				CE7586A52656D551001D8C6A /* SubjectGPATableViewCell.swift in Sources */,
+				CEE6593426788AD9001F593A /* CustomTextFieldBlue.swift in Sources */,
 				CE7624792677868B00399E37 /* CustomButton.swift in Sources */,
 				CE9539CA267795F4005B7DBB /* CustomSegmentedControl.swift in Sources */,
 				CE9539C826778C54005B7DBB /* CustomTextField.swift in Sources */,

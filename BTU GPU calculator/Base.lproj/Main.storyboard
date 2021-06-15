@@ -65,7 +65,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="GPA" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TlB-aL-k1t" customClass="CustomTextField" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="GPA" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TlB-aL-k1t" customClass="CustomTextFieldBlue" customModule="BTU_GPU_calculator" customModuleProvider="target">
                                                     <rect key="frame" x="192" y="22" width="56" height="34"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="56" id="Gj6-4a-GiT"/>
@@ -269,7 +269,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ქულა" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ae3-2f-UuF" customClass="CustomTextField" customModule="BTU_GPU_calculator" customModuleProvider="target">
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ქულა" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ae3-2f-UuF" customClass="CustomTextFieldBlue" customModule="BTU_GPU_calculator" customModuleProvider="target">
                                                             <rect key="frame" x="239" y="29" width="65" height="41"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="34" id="5l5-af-VjH"/>
@@ -618,9 +618,6 @@
         </designable>
         <designable name="hnr-u1-ncK">
             <size key="intrinsicContentSize" width="132" height="34"/>
-        </designable>
-        <designable name="jRP-DK-RKq">
-            <size key="intrinsicContentSize" width="15.333333333333334" height="30"/>
         </designable>
         <designable name="l8w-9Q-Bbi">
             <size key="intrinsicContentSize" width="65" height="30"/>

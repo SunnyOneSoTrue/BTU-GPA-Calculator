@@ -95,9 +95,9 @@ class SemesterGPAViewController: UIViewController, UITableViewDelegate, UITableV
             
             if Double((cell.subjectGPAField.text)!)! <= 4.0 && Double((cell.subjectGPAField?.text)!)! >= 0.0 && Int((cell.subjectCreditField?.text)!)! >= 3 && Int((cell.subjectCreditField?.text)!)! <= 6 { // it is impossible to get less than 0 and more than 4.0 as a gpa and less than 3 and more than 6 credit
                 
-                cell.subjectNameField!.layer.borderColor = CGColor(red: 1, green: 1, blue: 1, alpha: 1)
-                cell.subjectGPAField!.layer.borderColor = CGColor(red: 1, green: 1, blue: 1, alpha: 1)
-                cell.subjectCreditField!.layer.borderColor = CGColor(red: 1, green: 1, blue: 1, alpha: 1)
+                cell.subjectNameField!.layer.borderColor = CGColor(red: 1.00, green: 0.00, blue: 0.49, alpha: 1.00)
+                cell.subjectGPAField!.layer.borderColor = CGColor(red: 0.03, green: 0.00, blue: 0.68, alpha: 1.00)
+                cell.subjectCreditField!.layer.borderColor = CGColor(red: 1.00, green: 0.00, blue: 0.49, alpha: 1.00)
                 
                 gpaTimesCreditSum += Double(cell.subjectGPAField.text!)! * Double(cell.subjectCreditField.text!)!
                 aquiredCreditSum += Double(Int(cell.subjectCreditField.text!)!)
